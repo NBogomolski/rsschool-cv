@@ -33,7 +33,7 @@ Being a second year student of _Belarusian State University of Informatics and R
 
 ## Code Example
 
-```
+```javascript
 var productExceptSelf = function(nums) {
     let answer = [];
     let leftProd = [];
