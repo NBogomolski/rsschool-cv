@@ -22,26 +22,37 @@ nav
     justify-content: space-between
     align-items: center
     position: sticky
+    top: 0
+    background-color: #62929e
     padding: 20px
     white-space: nowrap
+    $borderRadius: 10px
+    border-bottom-left-radius: $borderRadius
+    border-bottom-right-radius: $borderRadius
 
 .cv-main
     display: flex
     justify-content: center
     padding: 0 20px
     flex: 1 1 1100px
+    margin: 50px 0
 
 .navigation
     display: flex
+    flex-wrap: wrap
+    align-content: space-between
     flex-basis: 50%
     justify-content: space-between
+    max-width: 700px
     a
         margin: 0 10px
         @include text($fontSize: 1.2em)
+        color: #fdfdff
             
 .my-name
     margin-right: auto
     @include text(46px)
+    color: #fdfdff
 
 i[class^="fa-"]
     color: #62929e
@@ -49,21 +60,25 @@ i[class^="fa-"]
 .my-picture
     $blockWidth: 30%
     width: $blockWidth
+    min-width: 200px
+    max-width: 350px
     margin-right: 5%
     img
-        border-radius: 10%
+        border-radius: 6%
         width: 100%
 
 .cv-contents
     border: 3px solid #62929e
     border-radius: 10px
     padding: 15px 25px
-    width: 500px
+    flex: 1 1 600px
+    max-width: 900px
     h2
         @extend %segment-heading
         margin-bottom: 10px
     ol
-        margin-left: 20px
+        margin-left: 10px
+        list-style-position: inside
 
 @mixin indented()
     padding: 10px 25px
@@ -83,6 +98,7 @@ h2[id] + *
 #code + pre
     background-color: #c6c5b9
     border-radius: 10px
+    position: static !important
     code
         color: black
 
