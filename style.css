@@ -53,6 +53,16 @@ nav {
   color: #fdfdff;
 }
 
+@media only screen and (max-width: 1220px) {
+  .navigation > a {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navigation > a {
+    flex-basis: 33%;
+  }
+}
 .my-name {
   margin-right: auto;
   font-size: 46px;
