@@ -1,0 +1,27 @@
+@mixin text($fontSize)
+    font-size: $fontSize
+    font-family: 'Fredoka', sans-serif
+    
+*
+    margin: 0    
+
+body 
+    background-color: beige
+    display: flex
+    justify-content: center
+    padding: 0 20px
+    
+.cv-main
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+
+.my-name
+    text-align: center
+    @include text(46px)
+
+.my-picture
+    img
+        width: 30%
+
+

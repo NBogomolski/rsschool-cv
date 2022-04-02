@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.cv-main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.my-name {
+  text-align: center;
+  font-size: 46px;
+  font-family: "Fredoka", sans-serif;
+}
+
+.my-picture img {
+  width: 30%;
+}
+
+/*# sourceMappingURL=style.css.map */
