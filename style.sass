@@ -2,6 +2,8 @@
     font-size: $fontSize
     font-family: 'Fredoka', sans-serif
     color: $textColor
+    
+    
          
 %segment-heading
     @include text($fontSize: 36px)
@@ -49,26 +51,34 @@ i[class^="fa-"]
     width: $blockWidth
     margin-right: 5%
     img
+        border-radius: 10%
         width: 100%
 
 .cv-contents
-    border: 2px solid #62929e
+    border: 3px solid #62929e
     border-radius: 10px
-    padding: 15px
+    padding: 15px 25px
     width: 500px
     h2
         @extend %segment-heading
 
-@mixin usualList()
+@mixin indented()
     padding: 10px 25px
     li
         margin-bottom: 4px
     
 
-#contact-info + ul
-    @include usualList()
+h2[id] + *
+    @include indented()
+    @include text($fontSize: 1.2em, $textColor: #62929e)
     li
-        @include text($fontSize: 1.2em, $textColor: #62929e)           
+        @include text($fontSize: 1em, $textColor: #62929e)
             
-        
+#about-me + p
+    margin-left: 15px
 
+#code + pre
+    background-color: #c6c5b9
+    border-radius: 10px
+    code
+        color: black

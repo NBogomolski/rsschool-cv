@@ -38,11 +38,81 @@
             </h2>
             <ul class="fa-ul usual-list">
                 <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>Phone number: +375 (29) 994-21-68</li>
-                <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span>Email: nikbog03@gmail.com</li>
+                <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span>Email: <a href="mailto:nikbog03@gmail.com">nikbog03@gmail.com</a></li>
                 <li><span class="fa-li"><i class="fa-regular fa-paper-plane"></i></span>Telegram: @h1dd3nsk8er</li>
                 <li><span class="fa-li"><i class="fa-brands fa-linkedin-in"></i></span><a href="https://www.linkedin.com/in/nikita-bogomolski/">LinkedIn</a></li>
                 <li><span class="fa-li"><i class="fa-solid fa-dollar-sign"></i></span><a href="https://www.fiverr.com/h1dd3ngod?up_rollout=true">Fiverr</a></li>
             </ul>
+            <h2 id="about-me">About me</h2>
+            <p>Being a second year student of Belarusian State University of Informatics and Radioelectronics, 
+                I’m seeking to reach a goal of being hired to one of many IT companies in Belarus, since it is a 
+                common practice for students of my year. In order to achieve that I’m currently taking a course 
+                aside from university at RS School. As for my skills, I like to think I’m decent at English and a 
+                couple front-end technologies. My hobbies include skateboarding and playing the guitar. All in all, 
+                my top priority at the moment is getting the desired job.</p>
+            <h2 id="skills">
+                Skills
+            </h2>
+            <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa-brands fa-html5"></i></span>HTML</li>
+                <li><span class="fa-li"><i class="fa-brands fa-css3"></i></span>Cascading Style Sheets(CSS, SASS)</li>
+                <li><span class="fa-li"><i class="fa-solid fa-code"></i></span>Programming Languages 
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>Typescript (Beginner)</li>
+                        <li>Java</li>
+                        <li>C Programming Language</li>
+                        <li>Pascal</li>
+                    </ul>
+                </li>
+                <li><span class="fa-li"><i class="fa-solid fa-code-branch"></i></span>Git</li>
+                <li><span class="fa-li"><i class="fa-brands fa-angular"></i></span>Frameworks: Angular</li>
+                <li><span class="fa-li"><i class="fa-brands fa-microsoft"></i></span>Microsoft Office
+                    <ul>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                    </ul>
+                </li>
+                <li><span class="fa-li"><i class="fa-brands fa-figma"></i></span>Design software for web development
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Figma</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="code">
+                Code Example
+            </h2>
+            <pre>
+                <code>
+var productExceptSelf = function(nums) {
+    let answer = [];
+    let leftProd = [];
+    let rightProd = [...nums];
+    
+    let prod = 1;
+    for (let num of nums) {
+        leftProd.push(prod);
+        prod *= num;
+    }
+    
+    prod = 1;
+    for (let i = nums.length-1; i >= 0; i--) {
+        rightProd[i] = prod;
+        prod *= nums[i];
+    }
+    
+    //merging
+    for (let i in nums) {
+        answer.push(leftProd[i]*rightProd[i]);
+    }
+    return answer;       
+};
+                </code>
+            </pre>
+            <h2 id="education">
+
+            </h2>
         </div>
     </section>
 </body>
