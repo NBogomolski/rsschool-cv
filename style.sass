@@ -1,27 +1,74 @@
-@mixin text($fontSize)
+@mixin text($fontSize: 18px, $textColor: #546a7b)
     font-size: $fontSize
     font-family: 'Fredoka', sans-serif
-    
+    color: $textColor
+         
+%segment-heading
+    @include text($fontSize: 36px)
+
 *
     margin: 0    
 
 body 
-    background-color: beige
+    background-color: #fdfdff
+    
+a
+    text-decoration: none
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: sticky
+    padding: 20px
+    white-space: nowrap
+
+.cv-main
     display: flex
     justify-content: center
     padding: 0 20px
-    
-.cv-main
-    display: flex
-    flex-flow: column wrap
-    justify-content: center
+    flex: 1 1 1100px
 
+.navigation
+    display: flex
+    flex-basis: 50%
+    justify-content: space-between
+    a
+        margin: 0 10px
+        @include text($fontSize: 1.2em)
+            
 .my-name
-    text-align: center
+    margin-right: auto
     @include text(46px)
 
-.my-picture
-    img
-        width: 30%
+i[class^="fa-"]
+    color: #62929e
 
+.my-picture
+    $blockWidth: 30%
+    width: $blockWidth
+    margin-right: 5%
+    img
+        width: 100%
+
+.cv-contents
+    border: 2px solid #62929e
+    border-radius: 10px
+    padding: 15px
+    width: 500px
+    h2
+        @extend %segment-heading
+
+@mixin usualList()
+    padding: 10px 25px
+    li
+        margin-bottom: 4px
+    
+
+#contact-info + ul
+    @include usualList()
+    li
+        @include text($fontSize: 1.2em, $textColor: #62929e)           
+            
+        
 
