@@ -1,0 +1,161 @@
+.cv-contents h2 {
+  font-size: 36px;
+  font-family: "Fredoka", sans-serif;
+  color: #546a7b;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #fdfdff;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #62929e;
+  padding: 20px;
+  white-space: nowrap;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cv-main {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  flex: 1 1 1100px;
+  margin: 50px 0;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-basis: 50%;
+  justify-content: space-between;
+  max-width: 700px;
+}
+.navigation a {
+  margin: 0 10px;
+  font-size: 1.2em;
+  font-family: "Fredoka", sans-serif;
+  color: #546a7b;
+  color: #fdfdff;
+}
+
+@media only screen and (max-width: 1220px) {
+  .navigation > a {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .navigation > a {
+    flex-basis: 33%;
+  }
+}
+.my-name {
+  margin-right: auto;
+  font-size: 46px;
+  font-family: "Fredoka", sans-serif;
+  color: #546a7b;
+  color: #fdfdff;
+}
+
+i[class^=fa-] {
+  color: #62929e;
+}
+
+.my-picture {
+  width: 30%;
+  min-width: 200px;
+  max-width: 350px;
+  margin-right: 5%;
+}
+.my-picture img {
+  border-radius: 6%;
+  width: 100%;
+}
+
+.cv-contents {
+  border: 3px solid #62929e;
+  border-radius: 10px;
+  padding: 15px 25px;
+  flex: 1 1 600px;
+  max-width: 900px;
+}
+.cv-contents h2 {
+  margin-bottom: 10px;
+}
+.cv-contents ol {
+  margin-left: 10px;
+  list-style-position: inside;
+}
+
+h2[id] + * {
+  padding: 10px 25px;
+  font-size: 1.2em;
+  font-family: "Fredoka", sans-serif;
+  color: #62929e;
+}
+h2[id] + * li {
+  margin-bottom: 4px;
+}
+h2[id] + * li {
+  font-size: 1em;
+  font-family: "Fredoka", sans-serif;
+  color: #62929e;
+}
+
+#about-me + p {
+  margin-left: 15px;
+}
+
+#code + pre {
+  background-color: #c6c5b9;
+  border-radius: 10px;
+  position: static !important;
+}
+#code + pre code {
+  color: black;
+}
+
+.reference {
+  font-style: italic;
+  margin-left: 20px;
+  font-size: 1em;
+  font-family: "Fredoka", sans-serif;
+  color: #393d3f;
+}
+
+.cv-main + footer {
+  padding: 20px;
+  background-color: #546a7b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.gh-reference {
+  align-self: flex-end;
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+.gh-reference a {
+  color: inherit;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,135 @@
+@mixin text($fontSize: 18px, $textColor: #546a7b)
+    font-size: $fontSize
+    font-family: 'Fredoka', sans-serif
+    color: $textColor
+    
+    
+         
+%segment-heading
+    @include text($fontSize: 36px)
+
+*
+    margin: 0    
+
+body 
+    background-color: #fdfdff
+    
+a
+    text-decoration: none
+
+$borderRadius: 10px
+
+nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: sticky
+    top: 0
+    background-color: #62929e
+    padding: 20px
+    white-space: nowrap
+    border-bottom-left-radius: $borderRadius
+    border-bottom-right-radius: $borderRadius
+
+.cv-main
+    display: flex
+    justify-content: center
+    padding: 0 20px
+    flex: 1 1 1100px
+    margin: 50px 0
+
+.navigation
+    display: flex
+    flex-wrap: wrap
+    align-content: space-between
+    flex-basis: 50%
+    justify-content: space-between
+    max-width: 700px
+    a
+        margin: 0 10px
+        @include text($fontSize: 1.2em)
+        color: #fdfdff
+
+@media only screen and (max-width: 1220px) 
+  .navigation > a
+    flex-basis: 25%
+
+@media only screen and (max-width: 780px) 
+  .navigation > a
+      flex-basis: 33%
+            
+.my-name
+    margin-right: auto
+    @include text(46px)
+    color: #fdfdff
+
+i[class^="fa-"]
+    color: #62929e
+
+.my-picture
+    $blockWidth: 30%
+    width: $blockWidth
+    min-width: 200px
+    max-width: 350px
+    margin-right: 5%
+    img
+        border-radius: 6%
+        width: 100%
+
+.cv-contents
+    border: 3px solid #62929e
+    border-radius: 10px
+    padding: 15px 25px
+    flex: 1 1 600px
+    max-width: 900px
+    h2
+        @extend %segment-heading
+        margin-bottom: 10px
+    ol
+        margin-left: 10px
+        list-style-position: inside
+
+@mixin indented()
+    padding: 10px 25px
+    li
+        margin-bottom: 4px
+    
+
+h2[id] + *
+    @include indented()
+    @include text($fontSize: 1.2em, $textColor: #62929e)
+    li
+        @include text($fontSize: 1em, $textColor: #62929e)
+            
+#about-me + p
+    margin-left: 15px
+
+#code + pre
+    background-color: #c6c5b9
+    border-radius: 10px
+    position: static !important
+    code
+        color: black
+
+.reference
+    font-style: italic
+    margin-left: 20px
+    @include text($fontSize: 1em, $textColor: #393d3f)
+
+.cv-main + footer
+    padding: 20px
+    background-color: #546a7b
+    border-top-left-radius: $borderRadius
+    border-top-right-radius: $borderRadius
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 100px
+
+.gh-reference
+    align-self: flex-end
+    @include text($fontSize: 20px, $textColor: white)
+    a
+        color: inherit
+    
+    
