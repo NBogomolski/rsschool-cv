@@ -17,6 +17,8 @@ body
 a
     text-decoration: none
 
+$borderRadius: 10px
+
 nav
     display: flex
     justify-content: space-between
@@ -26,7 +28,6 @@ nav
     background-color: #62929e
     padding: 20px
     white-space: nowrap
-    $borderRadius: 10px
     border-bottom-left-radius: $borderRadius
     border-bottom-right-radius: $borderRadius
 
@@ -114,4 +115,21 @@ h2[id] + *
     font-style: italic
     margin-left: 20px
     @include text($fontSize: 1em, $textColor: #393d3f)
+
+.cv-main + footer
+    padding: 20px
+    background-color: #546a7b
+    border-top-left-radius: $borderRadius
+    border-top-right-radius: $borderRadius
+    display: flex
+    align-items: center
+    justify-content: space-around
+    height: 100px
+
+.gh-reference
+    align-self: flex-end
+    @include text($fontSize: 20px, $textColor: white)
+    a
+        color: inherit
+    
     

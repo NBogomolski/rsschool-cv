@@ -137,4 +137,25 @@ h2[id] + * li {
   color: #393d3f;
 }
 
+.cv-main + footer {
+  padding: 20px;
+  background-color: #546a7b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+.gh-reference {
+  align-self: flex-end;
+  font-size: 20px;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+.gh-reference a {
+  color: inherit;
+}
+
 /*# sourceMappingURL=style.css.map */
