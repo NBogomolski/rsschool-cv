@@ -10,7 +10,7 @@
 
 ## About me
 
-Being a second year student of _Belarusian State University of Informatics and Radioelectronics_, I'm seeking to reach a goal of being hired to one of many IT companies in Belarus, since it is a common practice for students of my year. In order to achieve that I'm currently taking a course aside from university at **RS School**. As for my skills, I like to think I'm decent at English and a couple front-end technologies. My hobbies include skateboarding and playing the guitar. All in all, my top priority at the moment is getting the desired job.
+Being a third year student of _Belarusian State University of Informatics and Radioelectronics_, I'm seeking to reach a goal of being hired to one of many IT companies in Belarus, since it is a common practice for students of my year. In order to achieve that I'm currently taking a course aside from university at **RS School**. As for my skills, I like to think I'm decent at English and a couple front-end technologies. My hobbies include skateboarding and playing the guitar. All in all, my top priority at the moment is getting the desired job.
 
 ## Skills
 
