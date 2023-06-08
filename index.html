@@ -19,7 +19,10 @@
 </head>
 <body>
     <nav>
-        <h1 class="my-name">Nikita Bogomolski</h1>
+        <div>
+            <h1 class="my-name">Nikita Bogomolski</h1>
+            <h2 class="job-title">full-stack engineer</h2>
+        </div>
         <div class="navigation">
             <a href="#contact-info">Contact info</a>
             <a href="#about-me">About me</a>
@@ -42,36 +45,54 @@
                 <li><span class="fa-li"><i class="fa-regular fa-envelope"></i></span>Email: <a href="mailto:nikbog03@gmail.com">nikbog03@gmail.com</a></li>
                 <li><span class="fa-li"><i class="fa-regular fa-paper-plane"></i></span>Telegram: @h1dd3nsk8er</li>
                 <li><span class="fa-li"><i class="fa-brands fa-linkedin-in"></i></span><a href="https://www.linkedin.com/in/nikita-bogomolski/" target="_blank">LinkedIn</a></li>
-                <li><span class="fa-li"><i class="fa-solid fa-dollar-sign"></i></span><a href="https://www.fiverr.com/h1dd3ngod?up_rollout=true" target="_blank">Fiverr</a></li>
+                <!-- <li><span class="fa-li"><i class="fa-solid fa-dollar-sign"></i></span><a href="https://www.fiverr.com/h1dd3ngod?up_rollout=true" target="_blank">Fiverr</a></li> -->
             </ul>
             <h2 id="about-me">About me</h2>
-            <p>Being a third year student of Belarusian State University of Informatics and Radioelectronics, 
-                I`m seeking to reach a goal of being hired to one of many IT companies in Belarus, since it is a 
-                common practice for students of my year. In order to achieve that I`m currently taking a course 
-                aside from university at RS School. As for my skills, I like to think I`m decent at English and a 
-                couple front-end technologies. My hobbies include skateboarding and playing the guitar. All in all, 
-                top priority at the moment is getting the desired job.</p>
+            <p>I have a passion for creating websites. It struck me when I was assigned a similar task at university.
+                Even though I was fairly familiar with concepts of architecture, algorithms and programming, I had noticed the
+                fact that I could go on and on for hours trying to get a certain feature or system to work within my project.
+                It was a great feeling since I have been convinced a human can enter the so-called "flow state" of mind only if they
+                enjoy occupying their brain with that certain task. As it happens I like building websites and it`s one of those subject matters 
+                that don`t stop evolving. I`m excited to keep expanding my knowledge and am always interested to look into new technology. 
+                Rest assured, I aspire to become a master of my craft. At the moment, I`m looking to start a full-stack position at a welcoming
+                company in need of employees like me.
+            </p>
             <h2 id="skills">
                 Skills
             </h2>
             <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa-brands fa-html5"></i></span>HTML</li>
+                <li><span class="fa-li"><i class="fa-brands fa-html5"></i></span>HTML5</li>
                 <li><span class="fa-li"><i class="fa-brands fa-css3"></i></span>Cascading Style Sheets(CSS, SASS)</li>
-                <li><span class="fa-li"><i class="fa-solid fa-code"></i></span>Programming Languages 
+                <li><span class="fa-li"><i class="fa-brands fa-js"></i></span>JavaScript</li>
+                <li><span class="fa-li"><i class="fa-solid fa-code"></i></span>TypeScript</li>
+                <li><span class="fa-li"><i class="fa-solid fa-code-branch"></i></span>Git</li>
+                <li><span class="fa-li"><i class="fa-solid fa-wrench"></i></span>Problem solving</li>
+                <li><span class="fa-li"><i class="fa-solid fa-server"></i></span>Client-server Architecture</li>
+                <li><span class="fa-li"><i class="fa-solid fa-trowel-bricks"></i></span>Vite</li>
+                <li><span class="fa-li"><i class="fa-brands fa-react"></i></span>Client-side frameworks
                     <ul>
-                        <li>JavaScript</li>
-                        <li>Typescript (Beginner)</li>
-                        <li>Java</li>
-                        <li>C Programming Language</li>
-                        <li>Pascal</li>
+                        <li>React.js</li>
+                        <li>React Native</li>
                     </ul>
                 </li>
-                <li><span class="fa-li"><i class="fa-solid fa-code-branch"></i></span>Git</li>
-                <li><span class="fa-li"><i class="fa-brands fa-angular"></i></span>Frameworks:</li>
-                <li><span class="fa-li"><i class="fa-brands fa-microsoft"></i></span>Microsoft Office
+                <li><span class="fa-li"><i class="fa-sharp fa-solid fa-code-compare"></i></span>State management
                     <ul>
-                        <li>Microsoft Word</li>
-                        <li>Microsoft Excel</li>
+                        <li>MobX</li>
+                        <li>Redux</li>
+                    </ul>
+                </li>
+                <li><span class="fa-li"><i class="fa-brands fa-node-js"></i></span>Express.js
+                    <ul>
+                        <li>Architecture</li>
+                        <li>JWT Authentication</li>
+                        <li>REST</li>
+                    </ul>
+                </li>
+                <li><span class="fa-li"><i class="fa-solid fa-database"></i></span>Databases
+                    <ul>
+                        <li>Relational (MySQL, PostgreSQL)</li>
+                        <li>Document-oriented (MongoDB)</li>
+                        <li>NoSQL (Firebase)</li>
                     </ul>
                 </li>
                 <li><span class="fa-li"><i class="fa-brands fa-figma"></i></span>Design software for web development
@@ -81,37 +102,20 @@
                     </ul>
                 </li>
             </ul>
-            <h2 id="code">
-                Code Example
+            <h2 id="projects">
+                Pet projects
             </h2>
-            <pre>
-                <code>
-var productExceptSelf = function(nums) {
-    let answer = [];
-    let leftProd = [];
-    let rightProd = [...nums];
-    
-    let prod = 1;
-    for (let num of nums) {
-        leftProd.push(prod);
-        prod *= num;
-    }
-    
-    prod = 1;
-    for (let i = nums.length-1; i >= 0; i--) {
-        rightProd[i] = prod;
-        prod *= nums[i];
-    }
-    
-    //merging
-    for (let i in nums) {
-        answer.push(leftProd[i]*rightProd[i]);
-    }
-    return answer;       
-};
-                </code>
-            </pre>
-            <p class="reference">Product of array except self, Leetcode, 2021</p>
+                <ul>
+                    <li>
+                        <p class="pet-project">Workout tracker (React ,Express , PostgreSQL, SASS, JWT Auth, Bootstrap)</p>
+                    </li>
+                    <li>
+                        <p class="pet-project">Text chat application (React, Tailwind, Socket.io)</p>
+                    </li>
+                    <li>
+                        <p class="pet-project">Collaborative drawing application (WebSocket, MobX, PostgreSQL, Supabase storage)</p>
+                    </li>
+                </ul>
             <h2 id="education">
                 Education
             </h2>

@@ -20,6 +20,7 @@ a
 $borderRadius: 10px
 
 nav
+    z-index: 1
     display: flex
     justify-content: space-between
     align-items: center
@@ -37,6 +38,11 @@ nav
     padding: 0 20px
     flex: 1 1 1100px
     margin: 50px 0
+
+.job-title
+    @include text($fontSize: 1.6em)
+    font-weight: 500
+    color: #fdfdff
 
 .navigation
     display: flex
@@ -97,6 +103,10 @@ i[class^="fa-"]
     li
         margin-bottom: 4px
     
+.pet-project
+    @include indented()
+    @include text($fontSize: 1.2em, $textColor: #62929e)
+    padding: 0 25px
 
 h2[id] + *
     @include indented()
@@ -104,6 +114,9 @@ h2[id] + *
     li
         @include text($fontSize: 1em, $textColor: #62929e)
             
+#education
+    margin-top: 10px
+
 #about-me + p
     margin-left: 15px
 
